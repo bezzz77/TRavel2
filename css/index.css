@@ -546,6 +546,19 @@ header {
   color: #ac752f;
 }
 
+/* line 48, F:/Front Dev/Sites/travel/sass/components/header.sass */
+.first-lastname {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+/* line 52, F:/Front Dev/Sites/travel/sass/components/header.sass */
+.first-lastname p {
+  color: #fff;
+  font-size: 26px;
+}
+
 /* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/about.sass */
 .about_wrapp {
   background-color: #3b3434;
