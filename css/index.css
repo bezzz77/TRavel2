@@ -1,0 +1,1117 @@
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* line 8, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 18, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Sections
+   @mixin ========================================================================= */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 33, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 41, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+article, aside, footer, header, nav, section, figcaption, figure, main {
+  display: block;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 50, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Text-level semantics
+   @mixin ========================================================================= */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 64, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 74, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 84, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 95, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 103, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 107, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   @mixin ========================================================================= */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 118, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 127, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 136, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 144, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 153, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**Enable panning and pinch zoom gestures, but disable additional non-standard gestures such as double-tap to zoom. Disabling double-tap to zoom removes the need for browsers to delay the generation of click events when the user taps the screen. */
+/* line 168, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+a, area, button, input, label, select, textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 179, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 189, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 202, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 211, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 226, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 240, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 249, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 258, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 268, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* Scripting
+   @mixin ========================================================================= */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 280, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 288, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+template {
+  display: none;
+}
+
+/* Hidden
+   @mixin ========================================================================= */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 299, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+[hidden] {
+  display: none;
+}
+
+/* Reset
+   @mixin ========================================================================= */
+/* line 306, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+h1, h2, h3, h4, h5, h6, p, blockquote, em, img, i, dl, dt, ol, ul, li, video, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 313, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span {
+  outline: none;
+}
+
+/* line 318, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+ul, ol {
+  list-style-type: none;
+}
+
+/* line 322, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+/* line 325, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 331, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/** to remove the rounded in IOS*/
+/* line 338, F:/Front Dev/Sites/travel/sass/libs/normalize.sass */
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Droid";
+  src: url("../fonts/droid-serif/Droid-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Droid";
+  src: url("../fonts/droid-serif/DroidSerif-Regular.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-visibility {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 3;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+/* line 1, F:/Front Dev/Sites/travel/sass/partials/_grid.sass */
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 1, F:/Front Dev/Sites/travel/sass/partials/_grid.sass */
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /* line 1, F:/Front Dev/Sites/travel/sass/partials/_grid.sass */
+  .container {
+    max-width: 375px;
+  }
+}
+
+/* line 11, F:/Front Dev/Sites/travel/sass/partials/_grid.sass */
+.text_edit h3 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+  /* line 16, F:/Front Dev/Sites/travel/sass/partials/_grid.sass */
+  header .header_wrapp h1 {
+    font-size: 30px;
+  }
+}
+
+/* line 2, F:/Front Dev/Sites/travel/sass/partials/_uikit.sass */
+.uikit__h1 {
+  color: #fff;
+  font-size: 71px;
+  font-weight: 600;
+}
+
+/* line 6, F:/Front Dev/Sites/travel/sass/partials/_uikit.sass */
+.uikit__h2 {
+  color: white;
+}
+
+/* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/common.sass */
+.btn {
+  height: 55px;
+  width: 180px;
+  background-color: #3b3434;
+  border: 1px solid #ac752f;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  color: #ac752f;
+  font-weight: bold;
+}
+
+/* line 11, F:/Front Dev/Sites/travel/sass/pages/mainpage/common.sass */
+.btn:hover {
+  transition: .3s;
+  transform: scale(1.2);
+  color: white;
+}
+
+/* line 1, F:/Front Dev/Sites/travel/sass/components/header.sass */
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 1, F:/Front Dev/Sites/travel/sass/components/header.sass */
+  body {
+    background-size: auto;
+  }
+}
+
+/* line 10, F:/Front Dev/Sites/travel/sass/components/header.sass */
+header {
+  height: 100vh;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 10, F:/Front Dev/Sites/travel/sass/components/header.sass */
+  header {
+    padding: 0 10px;
+  }
+}
+
+/* line 14, F:/Front Dev/Sites/travel/sass/components/header.sass */
+.header_wrapp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 965px;
+  height: 100%;
+  max-height: 475px;
+  border: 10px solid #ac752f;
+  top: 170px;
+  transform: translateY(40%);
+  padding: 80px;
+}
+
+/* line 25, F:/Front Dev/Sites/travel/sass/components/header.sass */
+.header_wrapp span {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 40, F:/Front Dev/Sites/travel/sass/components/header.sass */
+.header_wrapp h1 {
+  font-size: 185px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 44, F:/Front Dev/Sites/travel/sass/components/header.sass */
+.header_wrapp p {
+  font-size: 24px;
+  text-align: center;
+  color: #ac752f;
+}
+
+/* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/about.sass */
+.about_wrapp {
+  background-color: #3b3434;
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+
+/* line 6, F:/Front Dev/Sites/travel/sass/pages/mainpage/about.sass */
+.about_wrapp h2 {
+  padding-left: 70px;
+  padding-top: 65px;
+  font-size: 60px;
+  color: #ac752f;
+}
+
+/* line 11, F:/Front Dev/Sites/travel/sass/pages/mainpage/about.sass */
+.about_wrapp h2:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 90px;
+  background-color: #ac752f;
+}
+
+/* line 15, F:/Front Dev/Sites/travel/sass/pages/mainpage/about.sass */
+.about_wrapp p {
+  font-size: 16px;
+  font-family: "Droid";
+  font-weight: 200;
+  color: #fff;
+  width: 480px;
+  height: 210px;
+  padding-left: 70px;
+  padding-top: 40px;
+  line-height: 30px;
+  white-space: pre-line;
+}
+
+@media only screen and (max-width: 768px) {
+  max-width: 768px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 375px) {
+  max-width: 375px;
+  font-size: 12px;
+}
+
+/* line 32, F:/Front Dev/Sites/travel/sass/pages/mainpage/about.sass */
+.about_button {
+  padding-top: 80px;
+  padding-left: 70px;
+}
+
+/* line 35, F:/Front Dev/Sites/travel/sass/pages/mainpage/about.sass */
+.about_img {
+  position: absolute;
+  top: 0;
+  left: 530px;
+  transform: translateY(-16%);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 35, F:/Front Dev/Sites/travel/sass/pages/mainpage/about.sass */
+  .about_img {
+    display: none;
+  }
+}
+
+/* line 42, F:/Front Dev/Sites/travel/sass/pages/mainpage/about.sass */
+.about-page {
+  padding: 100px 0 100px 0;
+}
+
+/* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.articles {
+  padding-bottom: 200px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+  .articles {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 5, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.articles_text {
+  padding-top: 290px;
+  padding-bottom: 145px;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 11, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.articles_text h2 {
+  font-size: 60px;
+  color: #ac752f;
+  text-align: center;
+}
+
+/* line 15, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.articles_text h2:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 90px;
+  background-color: #ac752f;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 15, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+  .articles_text h2:after {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* line 22, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.first_img {
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+
+/* line 25, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.firstimg_wrap {
+  box-shadow: -30px -30px 0px 0px #3b3434;
+}
+
+/* line 28, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.first_text h3 {
+  color: #ac752f;
+  font-size: 20px;
+}
+
+/* line 31, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.first_text h3:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 373px;
+  background-color: #ac752f;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* line 37, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.first_text p {
+  color: white;
+  font-size: 16px;
+  width: 370px;
+  height: 105px;
+  line-height: 30px;
+  margin-bottom: 70px;
+}
+
+/* line 44, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.first_text a {
+  color: #ac752f;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* line 51, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.wrap_article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 51, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+  .wrap_article {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 57, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+  .wrap_article .general_article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* line 65, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.article_second {
+  padding-top: 85px;
+}
+
+/* line 67, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+#editforpagearticle {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 70, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.article_page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 74, F:/Front Dev/Sites/travel/sass/pages/mainpage/articles.sass */
+.artpg_text p {
+  width: 100%;
+}
+
+/* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.galery {
+  margin-bottom: 225px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+  .galery {
+    margin-bottom: 50px;
+  }
+}
+
+/* line 6, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.galery_caption h3 {
+  font-size: 60px;
+  color: #ac752f;
+  margin-left: 60px;
+}
+
+/* line 10, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.galery_caption h3:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 90px;
+  background-color: #ac752f;
+}
+
+/* line 16, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 23, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+  .row .column {
+    width: 33%;
+  }
+  /* line 25, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+  .row .column img {
+    width: 100%;
+  }
+}
+
+/* line 27, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding-bottom: 30px;
+}
+
+/* line 31, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.column img {
+  margin: 10px;
+  vertical-align: middle;
+}
+
+/* line 34, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.col1 {
+  margin-top: 70px;
+}
+
+/* line 36, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.col3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 140px;
+}
+
+/* line 43, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.galery_button {
+  text-align: center;
+}
+
+/* line 45, F:/Front Dev/Sites/travel/sass/pages/mainpage/galery.sass */
+.btn {
+  background-color: inherit;
+}
+
+/* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.contact {
+  padding-bottom: 160px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+  .contact {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 5, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.contact_wrapp {
+  background-color: #3b3434;
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+
+/* line 10, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.contact_wrapp h2 {
+  position: absolute;
+  right: 315px;
+  top: 65px;
+  font-size: 60px;
+  color: #ac752f;
+}
+
+/* line 16, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.contact_wrapp h2:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 90px;
+  background-color: #ac752f;
+}
+
+@media only screen and (max-width: 768px) {
+  max-width: 768px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 375px) {
+  max-width: 375px;
+  font-size: 12px;
+}
+
+/* line 26, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.contact_button {
+  position: absolute;
+  bottom: 55px;
+  right: 350px;
+}
+
+/* line 30, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.contact_button a {
+  text-decoration: none;
+  color: #ac752f;
+  transition: .2s;
+}
+
+/* line 34, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.contact_button a:hover {
+  transition: .2s;
+  color: #fff;
+}
+
+/* line 37, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.contact_img {
+  position: absolute;
+  top: -50px;
+  left: 70px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 37, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+  .contact_img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 37, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+  .contact_img {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /* line 37, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+  .contact_img {
+    width: 375px;
+  }
+}
+
+/* line 47, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.group3 {
+  position: absolute;
+  right: 325px;
+  top: 315px;
+}
+
+/* line 51, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.group2 {
+  position: absolute;
+  right: 60px;
+  top: 190px;
+}
+
+/* line 55, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.group {
+  position: absolute;
+  right: 325px;
+  top: 190px;
+}
+
+/* line 59, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.maps {
+  position: absolute;
+  right: 68px;
+  top: 170px;
+}
+
+/* line 63, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+input {
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #3b3434;
+  color: #fff;
+}
+
+/* line 72, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+input:focus {
+  outline: none;
+}
+
+/* line 74, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+label {
+  color: #999;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 15px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* line 85, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+input:focus ~ label,
+input:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #ac752f;
+}
+
+/* line 90, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.bar {
+  position: relative;
+  display: block;
+  width: 215px;
+}
+
+/* line 94, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #ac752f;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* line 105, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.bar:before {
+  left: 50%;
+}
+
+/* line 107, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+.bar:after {
+  right: 50%;
+}
+
+/* line 110, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* line 113, F:/Front Dev/Sites/travel/sass/pages/mainpage/contact.sass */
+#contact_padding {
+  padding: 100px 0 100px 0;
+}
+
+/* line 1, F:/Front Dev/Sites/travel/sass/pages/mainpage/foot.sass */
+.fivesec {
+  padding-bottom: 18px;
+}
+
+/* line 3, F:/Front Dev/Sites/travel/sass/pages/mainpage/foot.sass */
+.fivesec_wrapp {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 6, F:/Front Dev/Sites/travel/sass/pages/mainpage/foot.sass */
+.fivesec_wrapp a {
+  height: 80px;
+  width: 80px;
+  border: 1px solid #ac752f;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+
+/* line 1, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+footer {
+  background-color: #1c1c1c;
+}
+
+/* line 4, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footeritems {
+  padding: 40px 0;
+}
+
+/* line 6, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footeritems ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* line 11, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footeritems ul li a {
+  color: #ac752f;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 20px 0;
+  font-weight: 600;
+  transition: .2s;
+}
+
+/* line 18, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footeritems ul li a:hover {
+  transition: .2s;
+  color: #fff;
+}
+
+/* line 21, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footer-position {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=../css/index.map */

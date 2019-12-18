@@ -1,0 +1,42 @@
+/* line 1, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+footer {
+  background-color: #1c1c1c;
+}
+
+/* line 4, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footeritems {
+  padding: 40px 0;
+}
+
+/* line 6, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footeritems ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* line 11, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footeritems ul li a {
+  color: #ac752f;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 20px 0;
+  font-weight: 600;
+  transition: .2s;
+}
+
+/* line 18, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footeritems ul li a:hover {
+  transition: .2s;
+  color: #fff;
+}
+
+/* line 21, F:/Front Dev/Sites/travel/sass/components/mainfooter.sass */
+.footer-position {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=../../css/components/mainfooter.map */

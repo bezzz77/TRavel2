@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/components/mainfooter.css",
+	"sources": [
+		"../../sass/components/mainfooter.sass"
+	],
+	"sourcesContent": [
+		"footer {\n  background-color: #1c1c1c; }\n.footer-wrap {}\n.footeritems {\n  padding: 40px 0;\n  ul {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    li {\n      a {\n        color: #ac752f;\n        text-decoration: none;\n        font-size: 25px;\n        padding: 20px 0;\n        font-weight: 600;\n        transition: .2s;\n        &:hover {\n          transition: .2s;\n          color: #fff; } } } } }\n.footer-position {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0; }\n"
+	],
+	"mappings": ";AAAA,AAAA,MAAM,CAAC;EACL,gBAAgB,EAAE,OAAQ;CAAG;;;AAE/B,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,MAAO;CAee;;;AAhBjC,AAEE,YAFU,CAEV,EAAE,CAAC;EACD,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,GAAI;EACpB,eAAe,EAAE,YAAa;CAWH;;;AAhB/B,AAOM,YAPM,CAEV,EAAE,CAIA,EAAE,CACA,CAAC,CAAC;EACA,KAAK,EAAE,OAAQ;EACf,eAAe,EAAE,IAAK;EACtB,SAAS,EAAE,IAAK;EAChB,OAAO,EAAE,MAAO;EAChB,WAAW,EAAE,GAAI;EACjB,UAAU,EAAE,GAAI;CAGG;;;AAhB3B,AAOM,YAPM,CAEV,EAAE,CAIA,EAAE,CACA,CAAC,AAOE,MAAM,CAAC;EACN,UAAU,EAAE,GAAI;EAChB,KAAK,EAAE,IAAK;CAAG;;;AACzB,AAAA,gBAAgB,CAAC;EACf,QAAQ,EAAE,QAAS;EACnB,MAAM,EAAE,CAAE;EACV,IAAI,EAAE,CAAE;EACR,KAAK,EAAE,CAAE;CAAG",
+	"names": []
+}
